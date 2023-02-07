@@ -76,6 +76,10 @@ footer{
     background-image: url(../assets/images/life-simulation.jpg); 
 }
 
+.flex-item a#artist-study{
+    background-image: url(../assets/images/artist-study.jpg); 
+}
+
 
 .flex-item a:hover{
     color:#bbbbbb;
