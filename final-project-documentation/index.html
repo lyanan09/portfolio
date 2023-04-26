@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+
+    <!-- meta viewport tag needed to make site responsive on mobile devices https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>WCC Portfolio - Demo Page</title>
+
+    <!-- including for some global styling -->
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+    <!-- if you have sub-pages think about adding a simple back button -->
+    <nav>
+        <a href="../">HOME</a>
+    </nav>
+    <header class="documentation-header">
+        <section class="center-text">
+            <h1>Work Title</h1>
+            <h2>by Yanan Liu</h6>
+                <p>Write a one-sentence summary of what the project is.</p>
+        </section>
+    </header>
+
+    <main class="documentation-page">
+        <section>
+            <div class="responsive-video centered-content">
+                <!-- <iframe title="vimeo-player" src="https://player.vimeo.com/video/644036051?h=b260a3b1b0" width="100%"
+                    height="100%" frameborder="0" allowfullscreen></iframe> -->
+                <iframe title="vimeo-player" src="https://player.vimeo.com/video/821015121?h=3ba4fedeec" width="100%"
+                    height="100%" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>
+        <section>
+            <h3>Introduction</h3>
+            <p>Write a short introduction, a short paragraph, giving a bit more detail about what the project is.</p>
+        </section>
+        <section>
+            <h3>Concept and Background Research</h3>
+
+            <p>
+                I wanted to use this project to get familiar with 3d and AR, so I started thinking about how to interact
+                from the technical perspective.
+            </p>
+            <p>
+                Inspired by a comedy piece by bo burnham[1], in which he interacts with himself as an in-game character
+                on a controller.
+            </p>
+            <!-- if you have a full width image try make it not too tall -->
+            <img src="../assets/images/bo.png" />
+            <p>
+                Of course, the interaction doesn't actually happen, but through video editing, the audience can see him
+                in a space
+                between reality and virtuality, which is an interesting viewing experience.
+            </p>
+            <p>
+                In AR, there is a mix of reality and virtuality. In the devices I currently have, there are three
+                entities involved in
+                the interaction: people, devices (phones, tablets, etc.), and virtual objects. Normally, people interact
+                with virtual
+                objects through devices, but I want to try to participate directly in the reality of AR and interact
+                directly with the
+                virtual objects in AR, even though the interaction itself will not actually happen. The audience can
+                watch the
+                interaction between the real me and the virtual objects on the screen, expressing and recording emotions
+                and stories in
+                this way.
+            </p>
+            <p>
+                The final product is a pseudo-documentary video of me, consisting of several small stories. From the
+                audience's
+                perspective, I am a role player in the video. I conceive the stories from the things around me and the
+                3D models I can
+                find, thinking about what the models are, how to use them, and how to fill the real space, and how I can
+                interact with
+                these models. The following small stories make up the final product:
+            </p>
+            <ol>
+                <li>I really like Pringles: A story about my obsession with Pringles, but I can only afford one.</li>
+                <li>I think I need a dog: A story about being too lonely and needing a virtual dog, but never getting a
+                    response from it.</li>
+            </ol>
+            <p>
+                The audience sees me interacting with the virtual objects, making it difficult to tell whether it's real
+                or virtual,
+                but
+                it requires higher technical expertise. The audience sees me trying to interact with the virtual
+                objects, but not
+                getting a response. Both of these narratives are possible, but due to time constraints, I choose the
+                second one.
+            </p>
+
+        </section>
+        <section>
+            <h3>Technical Implementation</h3>
+
+            <!-- example of styling for three images, you can write your own styling -->
+            <div class="flex-container flex-basis-third">
+                <div class="flex-item">
+                    <img src="../assets/images/repeating-diagonal-lines-square.jpeg" />
+                </div>
+                <div class="flex-item">
+                    <img src="../assets/images/repeating-diagonal-lines-square.jpeg" />
+                </div>
+                <div class="flex-item">
+                    <img src="../assets/images/repeating-diagonal-lines-square.jpeg" />
+                </div>
+            </div>
+
+            <h5>Presentation of the work:</h5>
+
+            <p>
+                
+                The final form of presentation for the work is a video, which is recorded from the screen of the AR device. However,
+                screen recording always results in low video quality. To improve the video quality as much as possible, I tried the
+                following three methods:
+            </p>
+
+            <ol>
+                <li>Recording the screen with a phone</li>
+                <li>Connecting the phone to a computer and recording the phone screen on the computer</li>
+                <li>Recording the screen with an iPad Pro</li>
+            </ol>
+
+            <p>
+                In the end, the video recorded with the third method was the clearest. Therefore, I decided to use an iPad Pro as the AR
+                device.
+            </p>
+
+            <h5>Technical Development:</h5>
+
+            <p>I started from the AR drag example provided by three.js[2].</p>
+
+            <p>
+                There are two main ways to manipulate virtual elements in this project: selecting and dragging, and zooming in and
+                out.
+                This allowed me to place the imported 3D models in the desired location at a suitable size.
+            </p>
+
+            <p>
+                Firstly, the dragging function was already available, but there was no pinchmove event in the gesture listener
+                events
+                provided by WebXR. Although it is possible to determine the pinchmove event based on the squeeze event, it is not
+                easy
+                to squeeze on the selected AR device, which is an iPad Pro. Therefore, I had to look for other solutions.
+            </p>
+
+            <!-- example of styling for three images, you can write your own styling -->
+            <div class="flex-container flex-basis-half">
+                <div class="flex-item">
+                    <img src="../assets/images/repeating-diagonal-lines-rect.jpeg" />
+                </div>
+                <div class="flex-item">
+                    <img src="../assets/images/repeating-diagonal-lines-rect.jpeg" />
+                </div>
+            </div>
+
+            <!-- default flex item is for 4 & follows media query styling for home page -->
+            <div class="flex-container">
+                <div class="flex-item">
+                    <img src="../assets/images/repeating-diagonal-lines-rect.jpeg" />
+                </div>
+                <div class="flex-item">
+                    <img src="../assets/images/repeating-diagonal-lines-rect.jpeg" />
+                </div>
+                <div class="flex-item">
+                    <img src="../assets/images/repeating-diagonal-lines-rect.jpeg" />
+                </div>
+                <div class="flex-item">
+                    <img src="../assets/images/repeating-diagonal-lines-rect.jpeg" />
+                </div>
+            </div>
+
+        </section>
+        <section>
+            <h3>Reflection and Future Development</h3>
+            <p>
+                In this project, I try to distinguish between treating technology as a goal and treating technology as a tool. In
+                previous projects, I often mistakenly treated technology as a goal, which limited my creative process. I am learning to
+                think about how to tell stories through video editing.
+            </p>
+
+            <p>
+                The recorded screen has low pixel resolution, and the final product cannot be played on a clearer screen. There are two
+                reasons for this: 1. Limited screen size 2. The webcam itself has low pixel resolution and cannot access a
+                high-resolution native camera.
+            </p>
+
+            <p>
+                I am searching for solutions to the problem of low webcam pixel resolution and exploring methods of storytelling that do
+                not rely on screen recording.
+            </p>
+
+            <p>
+                Currently, my content consists of independent and unrelated short stories, which can be made into a series. For example:
+            </p>
+
+            <ul>
+                <li>
+                    Trying to establish connections with objects, but they are virtual and will never respond. A person goes insane in a
+                    small room. I need to consider which objects can establish this kind of relationship or desire without fulfillment.
+                </li>
+                <li>Creating a bizarre world inspired by a project I saw on 180.</li>
+                <li>Living a life of extreme poverty and having to rely on imagination to survive.</li>
+            </ul>
+            
+        </section>
+        <section>
+            <h3>Code</h3>
+            <ul>
+                <li>
+                    <span>Drag & Zoom in/out</span>
+                    <a href="https://glitch.com/edit/#!/wcc2-drag"> Code</a>
+                    <a href="https://wcc2-drag.glitch.me">Live site</a>
+                </li>
+                <li>
+                    <span>Add</span>
+                    <a href="https://glitch.com/edit/#!/wcc2-add">Code</a>
+                    <a href="https://wcc2-add.glitch.me">Live site</a>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h3>References</h3>
+            <ol>
+                <li>inside bo burnham</li>
+                <li>
+                    <span>three.js ar-dragging</span>
+                    <a href="https://github.com/mrdoob/three.js/blob/master/examples/webxr_ar_dragging.html">Code</a>
+                </li>
+            </ol>
+        </section>
+    </main>
+
+    <footer>
+        <!-- normally information like contact details etc  -->
+        <!-- read more about semantic HTML https://www.w3schools.com/html/html5_semantic_elements.asp -->
+
+    </footer>
+</body>
+</html>
