@@ -170,6 +170,17 @@ img {
 	background-image: url(../assets/images/make-or-scrape.jpg);
 }
 
+.flex-item a#hypertext-concrete-poem {
+	background-image: url(../assets/images/hypertext-concrete-poem.jpg);
+}
+
+.flex-item a#pull-and-push {
+	background-image: url(../assets/images/pull-and-push.jpg);
+}
+
+.flex-item a#gaze-interaction {
+	background-image: url(../assets/images/gaze-interaction.jpg);
+}
 
 .flex-item a:hover {
 	color: #bbbbbb;
