@@ -3,6 +3,7 @@
 body {
 	font-family: Verdana, sans-serif;
 	margin: 0;
+	display: flex;
 }
 
 header h1 {
@@ -34,10 +35,19 @@ p {
 	font-family: Helvetica, sans-serif;
 }
 
+header {
+	width: 30%;
+	max-width: 500px;
+}
+
+main {
+	width: 70%;
+}
+
 main,
 header {
-	width: 100%;
-	max-width: 1400px;
+	/* width: 100%; */
+	/* max-width: 1400px; */
 	/* means it won't be larger than 1200px on larger screens */
 	box-sizing: border-box;
 	margin: 0 auto;
@@ -53,10 +63,10 @@ main.documentation-page section {
 	margin: 10px 10%;
 }
 
-footer {
+/* footer {
 	width: 100%;
 	min-height: 100px;
-}
+} */
 
 
 nav {
@@ -118,7 +128,7 @@ img {
 	/* the following three items can be put on one line: https://developer.mozilla.org/en-US/docs/Web/CSS/flex */
 	flex-grow: 0;
 	flex-shrink: 0;
-	flex-basis: 25%;
+	flex-basis: calc(100% / 3);
 	/*width of the box, take up a quarter of the parent's size*/
 	box-sizing: border-box;
 	/*this means that we can add padding, line below, and still only take 25% width of parent*/
@@ -180,6 +190,18 @@ img {
 
 .flex-item a#gaze-interaction {
 	background-image: url(../assets/images/gaze-interaction.jpg);
+}
+
+.flex-item a#readme {
+	background-image: url(../assets/images/readme.png);
+}
+
+.flex-item a#break-bubbles {
+	background-image: url(../assets/images/break-bubbles.jpg);
+}
+
+.flex-item a#particles {
+	background-image: url(../assets/images/particles.jpg);
 }
 
 .flex-item a:hover {
