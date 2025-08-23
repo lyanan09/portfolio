@@ -7,10 +7,8 @@ i18n.use(initReactI18next).init({
   lng: "zh",
   debug: true,
   resources: {
-    en: {
-    },
-    zh: {
-    },
+    en: {},
+    zh: {},
   },
 });
 

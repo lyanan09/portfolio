@@ -6,12 +6,7 @@ const Home = lazy(() => import("../pages/home"));
 const AppRoutes = () => (
   <Router basename="/portfolio">
     <Routes>
-      <Route
-        path="/"
-        element={
-            <Home />
-        }
-      />
+      <Route path="/" element={<Home />} />
     </Routes>
   </Router>
 );

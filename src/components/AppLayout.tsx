@@ -1,21 +1,16 @@
 import React from "react";
-import AppTopbar from "./AppTopbar";
+import AppFooter from "./AppFooter";
 
 interface LayoutProps {
   children: React.ReactNode;
 }
 
 const AppLayout = ({ children }: LayoutProps) => {
-
   return (
-    <div className="layout-container min-h-screen">
-      <main
-        className=""
-      >
-        <AppTopbar />
-        <div className="layout-content">{children}</div>
-      </main>
-    </div>
+    <main className="layout-container min-h-screen max-h-screen">
+      <div className="layout-content w-full  min-h-screen">{children}</div>
+      <AppFooter />
+    </main>
   );
 };
 
