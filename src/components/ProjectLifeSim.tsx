@@ -17,7 +17,7 @@ const ProjectLifeSim = () => {
 
   return (
     <>
-    <iframe src="https://player.vimeo.com/video/789427321?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="640px" height="640px" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="Life Simulation"></iframe>
+    <iframe src="https://player.vimeo.com/video/789427321?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="640px" height="640px" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerPolicy="strict-origin-when-cross-origin" title="Life Simulation"></iframe>
       <div className="p-6">
         <div className="flex items-center">
           <h3 className="text-xl font-semibold mr-4">Life Simulation </h3>
