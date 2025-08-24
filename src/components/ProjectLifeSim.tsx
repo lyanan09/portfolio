@@ -12,18 +12,12 @@ import ls9 from "../assets/images/lifesim-9.png";
 import ls10 from "../assets/images/lifesim-10.png";
 import ls11 from "../assets/images/lifesim-11.png";
 
-import lifesimVideo from "../assets/videos/life_simulation.mp4";
-
 const ProjectLifeSim = () => {
   const { t } = useTranslation();
 
   return (
     <>
-      <video
-        src={lifesimVideo}
-        controls
-        className="w-full h-full object-cover"
-      />
+    <iframe src="https://player.vimeo.com/video/789427321?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="640px" height="640px" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="Life Simulation"></iframe>
       <div className="p-6">
         <div className="flex items-center">
           <h3 className="text-xl font-semibold mr-4">Life Simulation </h3>

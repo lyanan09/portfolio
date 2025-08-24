@@ -1,9 +1,8 @@
 import { useTranslation } from "react-i18next";
-import insuranceVideo from "../assets/videos/insurance.mp4";
-import coverInsurance from "../assets/images/cover-insurance.png";
 import Insurance1 from "../assets/images/insurance-1.png";
 import Insurance2 from "../assets/images/insurance-2.png";
 import Insurance3 from "../assets/images/insurance-3.png";
+import Insurance4 from "../assets/images/insurance-4.png";
 
 import IconGithub from "../assets/images/icon_github.svg?react";
 
@@ -12,12 +11,7 @@ const ProjectInsurance = () => {
 
   return (
     <>
-      <video
-        src={insuranceVideo}
-        poster={coverInsurance}
-        controls
-        className="w-full h-full object-cover"
-      />
+      <iframe src="https://player.vimeo.com/video/1112661148?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="640" height="346" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="insurance-cut"></iframe>
       <div className="p-6">
         <div className="flex items-center">
           <h3 className="text-xl font-semibold mr-4">
@@ -53,6 +47,7 @@ const ProjectInsurance = () => {
         </p>
 
         <img src={Insurance1} alt="" className="mt-6" />
+        <img src={Insurance4} alt="" className="mt-6" />
         <img src={Insurance2} alt="" className="mt-6" />
         <img src={Insurance3} alt="" className="mt-6" />
       </div>

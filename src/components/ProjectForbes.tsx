@@ -5,6 +5,9 @@ import ForbesCover from "../assets/images/cover-forbes.png";
 import Forbes1 from "../assets/images/forbes-1.png";
 import Forbes2 from "../assets/images/forbes-2.png";
 import Forbes3 from "../assets/images/forbes-3.png";
+import Forbes4 from "../assets/images/forbes-4.png";
+import Forbes5 from "../assets/images/forbes-5.png";
+import Forbes6 from "../assets/images/forbes-6.png";
 
 const ProjectForbes = () => {
   const { t } = useTranslation();
@@ -52,6 +55,9 @@ const ProjectForbes = () => {
         <img src={Forbes1} alt="" className="mt-6" />
         <img src={Forbes2} alt="" className="mt-6" />
         <img src={Forbes3} alt="" className="mt-6" />
+        <img src={Forbes4} alt="" className="mt-6" />
+        <img src={Forbes5} alt="" className="mt-6" />
+        <img src={Forbes6} alt="" className="mt-6" />
       </div>
     </>
   );
